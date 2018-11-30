@@ -5,9 +5,9 @@ public class Cell implements IntList {
     private int data;
     private Cell nextCell;
 
-    public Cell(int data, Cell nexCell){
+    public Cell(int data, Cell nextCell){
         this.data = data;
-        this.nextCell = nexCell;
+        this.nextCell = nextCell;
     }
 
     public int getData() {

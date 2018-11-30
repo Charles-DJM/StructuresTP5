@@ -13,7 +13,7 @@ public class LinkedIntList implements IntList {
         return first == null;
     }
 
-    public IntList getHead(){
+    public Cell getHead(){
         return first;
     }
 
@@ -45,5 +45,8 @@ public class LinkedIntList implements IntList {
         return null;
     }
 
+    public IntListIterator iterator(){
+        return new IntListIterator(this);
+    }
 
 }
